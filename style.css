@@ -1,0 +1,281 @@
+/*Background style*/
+body{
+    background-image: url('blue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Navigation bar style */
+nav {
+    position: flex;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 10;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bolder;
+    padding: 2%;
+    height: 100px;
+    background-color: white;
+}
+/* Logo position and design */
+.logo{
+   position: relative;
+}
+.logo img{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: -30px;
+    left: 40px;
+}
+
+nav .menu{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    height: 200%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;S
+   
+}
+nav .menu li{
+    list-style: none;
+}
+nav .menu a {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 20px;
+    color: #01579b;
+    text-decoration: underline;
+    text-decoration-color: #01579b;
+  
+}
+nav .menu a:hover {
+   background-color: rgb(182, 225, 255);
+   color: #01579b;
+}
+
+/* Register and Login pages container style */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+.form-box{
+    width: 80%;
+    max-width: 350px;
+    position: absolute;
+    top: 35%;
+    left: 52.5%;
+    transform: translate(-50%,-50%);
+    background: rgba(100, 167, 209, 0.621);
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-box h1{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #01579b;
+    position: relative;
+    text-decoration: underline;
+}
+.input-field{
+    background: #eaeaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 100%;
+    background:transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #d3c8c880;
+}
+form p{
+    text-align: center;
+    font-size: 15px;
+}
+form p a{
+    text-decoration: underline;
+    color: rgb(46, 46, 201);
+}
+/* Button style */
+.btn-field{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 50%;
+    background: #01579b;
+    color: white;
+    height: 30px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2 ease;
+}
+.input-group{
+    height: 180px ;
+}
+.btn-field button.hover-effect:hover{
+    background: #eaeaeaea;
+    color: #01579b;
+}
+/* Ranking page style*/
+  /* Cell style to create different color on columns */
+td:nth-child(even), th:nth-child(even){
+    background-color: white;
+}
+td:nth-child(odd), th:nth-child(odd){
+    background-color: rgba(100, 167, 209, 0.621);
+}
+    /* Header >Ranking table< style */
+h2{
+    position: fixed;
+    top: 20%;
+    left: 43%;
+    font-size: 40px;
+    background-color: white;
+    color: #01579b;
+}
+  /* Table style */
+table{
+    position: fixed;
+    top: 30%;
+    left: 38%;
+    width: 30%;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 30px;
+}
+
+/* About us page style */
+ /*Header >About us< style */
+h3{
+    position: fixed;
+    top: 20%;
+    left: 43%;
+    font-size: 40px;
+    background-color: white;
+    color: #01579b;
+}
+ /* Text >dummy text< style */
+p2{
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    font-size: 20px;
+    height: 30%;
+    width: 80%;
+    border: 4px solid #01579b;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+/*Home page header and subheader styles*/
+/*header style*/
+h4{
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    font-size: 50px;
+    font-weight: bolder;
+    background-color: white;
+    color: #01579b;
+
+}
+/*subheaders style*/
+h5{
+    position: fixed;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    background-color: #01579b;
+    top: 35%;
+    left: 30%;
+}
+h6{
+    position: fixed;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    background-color: #01579b;
+    top: 35%;
+    left: 44%;
+}
+h7{
+    position: fixed;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    background-color: #01579b;
+    top: 35%;
+    right: 25%;
+}
+h8{
+    position: fixed;
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+    background-color: white;
+    bottom: 35%;
+    left: 44%;
+}
+/*Play button home page style*/
+
+.play-button{
+    position: fixed;
+    bottom: 25%;
+    left: 47%;
+    border-radius: 10px;
+    border-color: #01579b;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 10%;
+    color: white;
+    background-color: rgb(37, 200, 86); 
+    transition: transform 0.3; 
+}
+
+.play-button:hover {
+    transform: scale(1.3);
+}
+
+/* Footer style*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: #01579b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-weight: bold;
+}
